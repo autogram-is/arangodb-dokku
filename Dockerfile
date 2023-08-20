@@ -3,7 +3,13 @@
 # sudo mkdir -p /var/lib/dokku/data/storage/arango
 # sudo chown 32769:32769 /var/lib/dokku/data/storage/arango
 # dokku storage:mount arango /var/lib/dokku/data/storage/arango:/var/lib/arangodb3
-
+# 
+# dokku domains:set arango arango.example.com
+# 
+# dokku proxy:ports-add minio http:80:9000
+# dokku proxy:ports-add minio https:443:9000
+# dokku proxy:ports-add minio https:9001:9001
+# 
 
 FROM arangodb/arangodb:latest
 
