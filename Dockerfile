@@ -13,4 +13,6 @@
 
 FROM arangodb/arangodb:latest
 
-USER dokku
+# Add user dokku with an individual UID
+# RUN adduser -u 32769 -m -U dokku
+# USER dokku
