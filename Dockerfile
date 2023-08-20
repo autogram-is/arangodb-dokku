@@ -6,13 +6,11 @@
 # 
 # dokku domains:set arango arango.example.com
 # 
-# dokku proxy:ports-add minio http:80:9000
-# dokku proxy:ports-add minio https:443:9000
-# dokku proxy:ports-add minio https:9001:9001
+# dokku ports:add arango http:80:8529
+# dokku ports:add arango https:443:8529
+# dokku ports:add arango https:8529:8529
 # 
 
 FROM arangodb/arangodb:latest
 
-# Add user dokku with an individual UID
-RUN adduser -u 32769 -m -U dokku
 USER dokku
