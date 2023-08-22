@@ -27,7 +27,7 @@ Naturally, you want your data to stick around when ArangoDB reboots. Set up a st
 directory for Arango's DB cruft and mount it.
 
 ```
-dokku storage:ensure-directory /var/lib/dokku/data/storage/arango
+dokku storage:ensure-directory arango
 dokku storage:mount arango /var/lib/dokku/data/storage/arango:/var/lib/arangodb3
 ```
 
