@@ -28,7 +28,8 @@ directory for Arango's DB cruft and mount it.
 
 ```
 dokku storage:ensure-directory arango
-dokku storage:mount arango /var/lib/dokku/data/storage/arango:/var/lib/arangodb3
+dokku storage:mount arango /var/lib/dokku/data/storage/arango/data:/var/lib/arangodb3
+dokku storage:mount arango /var/lib/dokku/data/storage/arango/apps:/var/lib/arangodb3-apps
 ```
 
 ## Pushing the app

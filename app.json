@@ -11,7 +11,7 @@
   "logo": "https://www.arangodb.com/wp-content/uploads/2013/03/ArangoDB_avocado.png",
   "dokku": {
     "volumes": [
-      { "host":"/var/lib/dokku/data/$APP/storage", "app":"/var/lib/arangodb3" },
+      { "host":"/var/lib/dokku/data/$APP/data", "app":"/var/lib/arangodb3" },
       { "host":"/var/lib/dokku/data/$APP/apps", "app":"/var/lib/arangodb3-apps" }
     ]
   }
