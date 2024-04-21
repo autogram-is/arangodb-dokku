@@ -1,1 +1,1 @@
-FROM arangodb/arangodb:latest
+FROM arangodb/arangodb:3.12
